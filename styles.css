@@ -1,0 +1,173 @@
+
+/* styles.css */
+
+/* Basic styles for layout and navigation */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #3d4240;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 7px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.link {
+    text-decoration: none;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.link:hover {
+    color: green;
+    
+}
+.hero {
+   
+    margin-top: 30px;
+    width: 100%;
+    background-position: center;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 70dvh
+    
+
+}
+/* Styling for sections */
+.section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: 
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+/* Placeholder styles for skills and projects */
+.skills-container,
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container div,
+.projects-container div {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .skills-container div,
+    .projects-container div {
+        width: calc(50% - 40px); /* Adjust width for mobile (50% minus margins and padding) */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 10px; /* Adjust margin for mobile */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
+
+.skills-container div:hover,
+.projects-container div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for blog posts */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-posts div {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-posts div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for contact form */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
